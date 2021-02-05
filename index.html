@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Calculator</title>
+    <link rel="stylesheet" href="stylec.css" type="text/css">
+    <style>
+.footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            padding: 10px;
+            width: 100%;
+            background-color: rgb(182, 93, 93);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"> 
+        <div id="calculator">
+            <div id="result">
+                <div id="history">
+                    <p id="history-value">  </p>
+                </div>
+                <div id="output">
+                    <p id="output-value"></p>
+                </div>
+            </div>
+            <div id="keypad">
+                <button class="operator" id="clear" data-action="clear" >AC</button>
+                <button class="operator" id="backspace">CE</button>
+                <button class="operator" id="%">%</button>
+                <button class="operator" id="/" data-action="divide"> &#247 </button>
+                <button class="number" id="7">7</button>
+                <button class="number"id="8">8</button>
+                <button class="number"id="9">9</button>
+                <button class="operator"id="*" data-action="multiply">&times;</button>
+                <button class="number"id="4">4</button>
+                <button class="number"id="5">5</button>
+                <button class="number"id="6">6</button>
+                <button class="operator"id="-" data-action="subtract">-</button>
+                <button class="number"id="1">1</button>
+                <button class="number"id="2">2</button>
+                <button class="number"id="3">3</button>
+                <button class="operator"id="+" data-action="add">+</button>
+                <button class="operator"id="opposite">+/-</button>
+                <button class="number"id="0">0</button>
+                <button class="number" id="." data-action="decimal" >.</button>
+                <button class="operator"id="=">=</button>
+            </div>
+        </div>
+    </div>
+
+
+<div class="footer">
+    &copy; A simple calculator
+    <!-- <script>document.write(new Date().getFullYear());</script> -->
+</div>
+    <script src="simplecal.js"> </script>
+</body>
+</html>
